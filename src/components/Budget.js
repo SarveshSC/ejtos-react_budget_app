@@ -1,16 +1,42 @@
 import React, { useContext } from 'react';
 import { AppContext } from '../context/AppContext';
 
-const Budget = () => {
-    const {budget} = useContext(AppContext);
+// const reducer = (state, action) => {
+//     console.log(state,action);
+// }
 
-    // const changeHandler = (e) => {
-    //     // setBudget(e);
-    // }
+const Budget = () => {
+    const {budget, dispatch, expenses} = useContext(AppContext);
+
+    const editHandler = (val) => {
+        const totalExpenses = expenses.reduce((total, item) => {
+            return total += item.cost;
+        }, 0)
+        if(val < totalExpenses){
+            alert("You cannot reduce budget that is already allocated")
+        }
+        if(val > 20000){
+            alert("Budget cannot exceed 20000")
+        }
+        else{
+            dispatch({
+                type:"SET_BUDGET",
+                payload: val
+            })
+        } 
+    }
 
     return (
         <div className='alert alert-secondary'>
-            <span>Budget: £<input type="number" step="10" max="20000" value={budget} /></span>
+            <span>
+                Budget: £
+                <input 
+                type="number" 
+                step="10" 
+                value={budget}
+                onChange={(e) => editHandler(e.target.value)} 
+                />
+            </span>
         </div>
     );
 };

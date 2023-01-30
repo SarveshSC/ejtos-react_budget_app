@@ -13,7 +13,7 @@ const App = () => {
         <AppProvider>
             <div className='container'>
                 {/* Add the code here to add the components          */}
-                <h1 className='mt-3'>Company's Allocated Budget</h1>
+                <h1 className='mt-3'>Sarvesh's Company's Allocated Budget</h1>
                 <div className='row mt-3'>
                     <div className='col-sm'>
                         <Budget />
