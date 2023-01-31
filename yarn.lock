@@ -2344,6 +2344,11 @@
   "resolved" "https://registry.npmjs.org/@xtuc/long/-/long-4.2.2.tgz"
   "version" "4.2.2"
 
+"0s@^1.0.0":
+  "integrity" "sha512-z6UaFBVf6mdc3cRQMFYSGcGxQ5c8bqrzIjHgzDqINNj4D/f0l+MgMCzplQJbDyUO+I0ghMuLD0we2NfBY5hVwA=="
+  "resolved" "https://registry.npmjs.org/0s/-/0s-1.0.0.tgz"
+  "version" "1.0.0"
+
 "abab@^2.0.3", "abab@^2.0.5":
   "integrity" "sha512-j2afSsaIENvHZN2B8GOpF566vZ5WVk5opAiMTvWgaQT8DkbOqsTfvNAvHoRGU2zzP8cPoqys+xHTRDWW8L+/BA=="
   "resolved" "https://registry.npmjs.org/abab/-/abab-2.0.6.tgz"

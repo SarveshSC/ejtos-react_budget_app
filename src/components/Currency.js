@@ -10,18 +10,19 @@ const Currency = () => {
             payload: val
         })
     }
-
     return (
+        <div className='alert alert-success' style={{padding: '9px'}}>Currency: 
             <select 
-            className='btn btn-success'
+            className='btn'
             name="currency" id="currency" 
-            style={{color: 'white', background: 'green'}}
+            style={{color: '#0f5132', marginLeft: '1em', background:'#d1e7dd'}}
             onChange={(e) => changeCurrency(e.target.value)}>
                 <option value="£">£ Pound</option>
                 <option value="$">$ Dollar</option>
                 <option value="€">€ Euro</option>
-                <option value="₹">₹ Ruppee</option>
+                <option value="₹">₹ Rupee</option>
             </select>
+        </div>
     )
 }
 
